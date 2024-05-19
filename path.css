@@ -1,0 +1,24 @@
+
+.path-1 {
+    stroke: #d84315; /* Red color for Creativity */
+    animation-delay: 0.2s;
+    stroke-dashoffset: calc(502 - (502 * 90) / 100); /* 90% */
+}
+
+.path-2 {
+    stroke: #2196f3; /* Blue color for Communication */
+    animation-delay: 0.4s;
+    stroke-dashoffset: calc(502 - (502 * 70) / 100); /* 70% */
+}
+
+.path-3 {
+    stroke: #ffeb3b; /* Yellow color for Problem Solving */
+    animation-delay: 0.6s;
+    stroke-dashoffset: calc(502 - (502 * 90) / 100); /* 90% */
+}
+
+.path-4 {
+    stroke: #4caf50; /* Green color for Team Work */
+    animation-delay: 0.8s;
+    stroke-dashoffset: calc(502 - (502 * 85) / 100); /* 85% */
+}

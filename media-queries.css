@@ -1,0 +1,69 @@
+@media(max-width:700px){
+  .header{
+    display: none;
+  }
+  .home{
+    height: 80vh;
+  }
+  .home-content{
+    margin-top: 160px;
+  }
+  .home-content h1{
+    font-size: 50px;
+    margin: 10px 0;
+  }
+  .home-content h3{
+    font-size: 25px;
+  }
+  .home-content p{
+    line-height: 1.5;
+  }
+  .home{
+    padding:20px;
+  }
+  .about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .about img{
+    padding: 0;
+  }
+  .about-text h2,  .about-text h4{
+    text-align: center;
+  }
+  .container{
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .container .sub-title{
+    padding: 10px;
+  }
+  .services-list{
+    transform: scale(0.9);
+  }
+
+
+/* ----------------SKILLS------------- */
+  .container1 .heading1{
+
+  }
+  .main-text h2 {
+    font-size: 50px;
+  }
+  .radial-bars .radial-bar{
+    transform: scale(1.3);
+  }
+
+  /* ---------------contact---------------- */
+  .contact{
+    display: block;
+  }
+  .contact-text h2{
+    font-size: 65px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+}
