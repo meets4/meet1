@@ -3,234 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="media-queries.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skills</a>
-            <a href="#" style="--i:4">Portfolio</a>
-            <a href="#contact" style="--i:5">Contact</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Meet Solanki</h1>
-            <h3>And I'm a <span class="text"></span> </h3>
-            <p>I'm a Web Designer with good expertise on front-end Development
-                <br>Expertise is to create websie, front-design and more
+    <button id="menuToggle" >☰</button>
+    <!-- <span class="btn-text">Meet Solanki</span> -->
+    <div class="menu-bar" id="menubar">
+        <img src="img/dp.png" alt="">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <hr/>
+            <li><a href="#about">About</a></li>
+            <hr/>
+            <li><a href="#skills">Skills</a></li>
+            <hr/>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <hr>
+            <li><a href="#contact">Contact</a></li>
+            <hr>
+        </ul>
+        <footer>
+            <p>Copyright 2024 All rights Reserved |
+                <br>
+                This Website is made by
+                <br>
+                Meet
             </p>
-            <div class="home-sci">
-                 <a href="#" style="--i:6"><i class='bx bxl-facebook'></i></a>
-                 <a href="#" style="--i:7"><i class='bx bxl-instagram' ></i></a>
-                 <a href="#" style="--i:8"><i class='bx bxl-whatsapp' ></i></a>
-                 <a href="#" style="--i:9"><i class='bx bxl-linkedin' ></i></a>
-            </div>
-            <a href="#" class="btn-box">More About Me </a>
-        </div>
-        <span class="home-imgHover"></span>
-    </section>
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/dp.png" alt="">
-        </div>
-        <div class="about-text">
-            <h2 >About <span>Me</span></h2>
-            <h4>Full Stack Developer</h4>
-            <p>Hello! I'm Meet, a passionate React.js developer with a keen interest in BackEnd development. With a strong foundation in front-end technologies, I'm currently expanding my skill set to include BackEnd development to create more robust and comprehensive solutions. I thrive in collaborative environments and am always eager to take on new challenges. Let's connect and explore opportunities to create innovative solutions together!</p>
-            <a href="#" class="btn-box">More About Me</a>
-        </div>
-    </section>
-    <section class="services" id="services">
-        <div class="container">
-            <h1 class="sub-title">My <span>Services</span></h1>
-            <div class="services-list">
-                <div class="">
-                    <i class='bx bx-code-alt' style="color: #0ef;"></i>
-                   <h2>UI/UX Design</h2>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, modi eaque soluta at ipsa consequatur officia. Eum aliquid debitis repudiandae, quod quis ullam illo, deserunt tenetur nihil blanditiis vitae ex!</p>
-                    <a href="#" class="read">Learn more</a>
-                </div>
-                <div class="">
-                    <i class='bx bxl-apple' style="color: #0ef;"></i>
-                   <h2>UI/UX Design</h2>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, modi eaque soluta at ipsa consequatur officia. Eum aliquid debitis repudiandae, quod quis ullam illo, deserunt tenetur nihil blanditiis vitae ex!</p>
-                    <a href="#" class="read">Learn more</a>
-                </div>
-                <div class="">
-                    <i class='bx bx-crop' style="color: #0ef;"></i>
-                   <h2>UI/UX Design</h2>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, modi eaque soluta at ipsa consequatur officia. Eum aliquid debitis repudiandae, quod quis ullam illo, deserunt tenetur nihil blanditiis vitae ex!</p>
-                    <a href="#" class="read">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <h1 class="sub-title" style="text-align: center;padding: 0; margin-top: 20px;">My <span>Skills</span></h1>
-    <section>
-        <div class="container1" id="skills">
-            <h1 class="heading1">Technical Skills<h1>
-                <div class="technical-bars" style="padding: 13px;">
-                    <div class="bar">
-                        <i class='bx bxl-html5' style="color: #ee7744;"></i>
-                        <div class="info">
-                            <span>HTML</span>
-                        </div>
-                        <div class="progress-line html">
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <i class='bx bxl-css3' style="color: #147bbc;"></i>
-                        <div class="info">
-                            <span>CSS</span>
-                        </div>
-                        <div class="progress-line css">
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <i class='bx bxl-javascript' style="color: #b0bc1e;"></i>
-                        <div class="info">
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="progress-line javascript">
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <i class='bx bxl-react' style="color: rgb(58, 205, 235);"></i>
-                        <div class="info">
-                            <span>React Js</span>
-                        </div>
-                        <div class="progress-line react">
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <i class='bx bxl-php' style="color: rgb(99, 158, 248);"></i>
-                        <div class="info">
-                            <span>PHP</span>
-                        </div>
-                        <div class="progress-line php">
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <div class="container1">
-            <h1 class="heading1">Professional Skills</h1>
-            <div class="radial-bars">
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text">Creativity</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">70%</div>
-                    <div class="text">Communication</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text">Problem Solving</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">85%</div>
-                    <div class="text">Team Work</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="project" id="portfolio">
-            <div class="main-text" id="project">
-                <h2>Latest <span>Project</span></h2>
-
-                <div class="portfolio-content">
-                    <div class="row">
-                        <img src="img/marinewaves.jpg" alt="">
-                        <div class="layer">
-                            <h5>MarineWaves</h5>
-                            <p>MarineWaves, our final year project, offers global export services with door-to-door delivery, real-time tracking, live weather updates, and enhanced customer support.</p>
-                            <a href="https://marinewave.netlify.app/" target="_blank"><i class="bx bx-link-external"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/portfolio.png" alt="">
-                        <div class="layer">
-                            <h5>Portfolio</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum est id odit possimus assumenda numquam quis suscipit impedit molestiae incidunt.</p>
-                            <a href="https://meets4.github.io/UI/" target="_blank"><i class="bx bx-link-external"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="img/158909.jpg" alt="">
-                        <div class="layer">
-                            <h5>UX/UI Desing</h5>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum est id odit possimus assumenda numquam quis suscipit impedit molestiae incidunt.</p>
-                            <a href="#"><i class="bx bx-link-external"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2>Contact <span>Me</span></h2>
-            <h4>Let's work Together</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore quasi facere, dolor ullam sint voluptatem magni. Mollitia doloribus, quam cum temporibus incidunt sint error repellendus dicta dignissimos molestias molestiae.</p>
-            <div class="contact-list">
-                <li><i class="bx bxs-send"></i>work.meetsolanki@gmail.com</li>
-                <li><i class="bx bxs-phone"></i>+91 9974231328</li>
-            </div>
-            <div class="contact-icons">
-                <a href="#" style="--i:6"><i class='bx bxl-facebook'></i></a>
-                <a href="#" style="--i:7"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" style="--i:8"><i class='bx bxl-whatsapp' ></i></a>
-                <a href="#" style="--i:9"><i class='bx bxl-linkedin' ></i></a>
-           </div>
-        </div>
-        <div class="contact-form">
-            <form action="">
-                <input type="text" placeholder="Enter Your Name" required>
-                <input type="email" placeholder="Enter Your Email" required>
-                <input type="text" placeholder="Enter Your Subject" required>
-                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
-                <input type="submit" class="send" value="Send Message"/>
-            </form>
-        </div>
-    </section>
-    <div class="last-text">
-        <p>Developed with <i class='bx bxs-heart' style="color: rgb(240, 15, 15);"></i> by MD Solanki @ 2024</p>
+        </footer>
     </div>
-    <a href="" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+    <div class="main-container">
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+            <nav class="navbar">
+                <a href="#home" style="--i:1" class="active">Home</a>
+                <a href="#about" style="--i:2">About</a>
+                <a href="#skills" style="--i:3">Skills</a>
+                <a href="#portfolio" style="--i:4">Portfolio</a>
+                <a href="#contact" style="--i:5">Contact</a>
+            </nav>
+        </header>
+        
+        <section class="home">
+            <div class="home-content" id="home">
+                <h3>Hello, It's Me</h3>
+                <h1>Meet Solanki</h1>
+                <h3>And I'm a <span class="text"></span> </h3>
+                <p>I'm a Frontend Developer with good expertise in Web Applications
+                And learning more about MERN Technologies...
+                </p>
+                <div class="home-sci">
+                     <a href="#" style="--i:6"><i class='bx bxl-facebook'></i></a>
+                     <a href="#" style="--i:7"><i class='bx bxl-instagram' ></i></a>
+                     <a href="#" style="--i:8"><i class='bx bxl-whatsapp' ></i></a>
+                     <a href="#" style="--i:9"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+                <a href="#about" class="btn-box">More About Me </a>
+            </div>
+            <span class="home-imgHover"></span>
+        </section>
+    
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="img/dp.png" alt="">
+            </div>
+            <div class="about-text">
+                <h2 >About <span>Me</span></h2>
+                <h4>MERN Stack Developer</h4>
+                <p>Hello! I'm Meet, a passionate React.js developer with a keen interest in BackEnd development. With a strong foundation in front-end technologies, I'm currently expanding my skill set to include BackEnd development to create more robust and comprehensive solutions. I thrive in collaborative environments and am always eager to take on new challenges. Let's connect and explore opportunities to create innovative solutions together!</p>
+                <a href="Meet_Solanki.pdf" class="btn-box" style="border-radius: 5px;">Download CV</a>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">My <span>Services</span></h1>
+                <div class="services-list">
+                    <div class="">
+                        <i class='bx bx-code-alt' style="color: #0ef;"></i>
+                       <h2>UI/UX Design</h2>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, modi eaque soluta at ipsa consequatur officia. Eum aliquid debitis repudiandae, quod quis ullam illo, deserunt tenetur nihil blanditiis vitae ex!</p>
+                        <a href="#" class="read">Learn more</a>
+                    </div>
+                    <div class="">
+                        <i class='bx bxl-apple' style="color: #0ef;"></i>
+                       <h2>UI/UX Design</h2>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, modi eaque soluta at ipsa consequatur officia. Eum aliquid debitis repudiandae, quod quis ullam illo, deserunt tenetur nihil blanditiis vitae ex!</p>
+                        <a href="#" class="read">Learn more</a>
+                    </div>
+                    <div class="">
+                        <i class='bx bx-crop' style="color: #0ef;"></i>
+                       <h2>UI/UX Design</h2>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, modi eaque soluta at ipsa consequatur officia. Eum aliquid debitis repudiandae, quod quis ullam illo, deserunt tenetur nihil blanditiis vitae ex!</p>
+                        <a href="#" class="read">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <h1 class="sub-title" style="text-align: center;padding: 0; margin-top: 20px;">My <span>Skills</span></h1>
+        <section>
+            <div class="container1" id="skills">
+                <h1 class="heading1">Technical Skills<h1>
+                    <div class="technical-bars" style="padding: 13px;">
+                        <div class="bar">
+                            <i class='bx bxl-html5' style="color: #ee7744;"></i>
+                            <div class="info">
+                                <span>HTML</span>
+                            </div>
+                            <div class="progress-line html">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <i class='bx bxl-css3' style="color: #147bbc;"></i>
+                            <div class="info">
+                                <span>CSS</span>
+                            </div>
+                            <div class="progress-line css">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <i class='bx bxl-javascript' style="color: #b0bc1e;"></i>
+                            <div class="info">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="progress-line javascript">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <i class='bx bxl-react' style="color: rgb(58, 205, 235);"></i>
+                            <div class="info">
+                                <span>React Js</span>
+                            </div>
+                            <div class="progress-line react">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <i class='bx bxl-php' style="color: rgb(99, 158, 248);"></i>
+                            <div class="info">
+                                <span>PHP</span>
+                            </div>
+                            <div class="progress-line php">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="container1">
+                <h1 class="heading1">Professional Skills</h1>
+                <div class="radial-bars">
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Creativity</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">70%</div>
+                        <div class="text">Communication</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Problem Solving</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">85%</div>
+                        <div class="text">Team Work</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="project" id="portfolio">
+                <div class="main-text" id="project">
+                    <h2>Latest <span>Project</span></h2>
+    
+                    <div class="portfolio-content">
+                        <div class="row">
+                            <img src="img/marinewaves.jpg" alt="">
+                            <div class="layer">
+                                <h5>MarineWaves</h5>
+                                <p>MarineWaves, our final year project, offers global export services with door-to-door delivery, real-time tracking, live weather updates, and enhanced customer support.</p>
+                                <a href="https://marinewave.netlify.app/" target="_blank"><i class="bx bx-link-external"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/portfolio.png" alt="">
+                            <div class="layer">
+                                <h5>Portfolio</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum est id odit possimus assumenda numquam quis suscipit impedit molestiae incidunt.</p>
+                                <a href="https://meets4.github.io/UI/" target="_blank"><i class="bx bx-link-external"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="img/158909.jpg" alt="">
+                            <div class="layer">
+                                <h5>UX/UI Desing</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum est id odit possimus assumenda numquam quis suscipit impedit molestiae incidunt.</p>
+                                <a href="#"><i class="bx bx-link-external"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="contact" id="contact">
+            <div class="contact-text">
+                <h2>Contact <span>Me</span></h2>
+                <h4>Let's work Together</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore quasi facere, dolor ullam sint voluptatem magni. Mollitia doloribus, quam cum temporibus incidunt sint error repellendus dicta dignissimos molestias molestiae.</p>
+                <div class="contact-list">
+                    <li><i class="bx bxs-send"></i> work.meetsolanki@gmail.com</li>
+                    <li><i class="bx bxs-phone"></i> +91 9974231328</li>
+                </div>
+                <div class="contact-icons">
+                    <a href="#" style="--i:6"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" style="--i:7"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" style="--i:8"><i class='bx bxl-whatsapp' ></i></a>
+                    <a href="#" style="--i:9"><i class='bx bxl-linkedin' ></i></a>
+               </div>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter Your Email" required>
+                    <input type="text" placeholder="Enter Your Subject" required>
+                    <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                    <input type="submit" class="send" value="Send Message"/>
+                </form>
+            </div>
+        </section>
+        <div class="last-text">
+            <p>Developed with <i class='bx bxs-heart' style="color: rgb(240, 15, 15);"></i> by Meet @ 2024</p>
+        </div>
+        <a href="" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
