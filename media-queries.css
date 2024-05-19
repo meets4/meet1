@@ -1,4 +1,17 @@
 @media(max-width:700px){
+
+  #menuToggle{
+    display: inline-block;
+    font-size: 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin: 30px;
+  }
+  .btn-text{
+
+  }
   .header{
     display: none;
   }
@@ -6,7 +19,7 @@
     height: 80vh;
   }
   .home-content{
-    margin-top: 160px;
+    margin-top: 10px;
   }
   .home-content h1{
     font-size: 50px;
@@ -65,5 +78,6 @@
     font-size: 65px;
     margin-bottom: 30px;
     text-align: center;
-}
+  }
+
 }
